@@ -16,6 +16,8 @@ import {
   Config,
 } from "@usedapp/core";
 import { getDefaultProvider } from "ethers";
+import { extendTheme } from "@chakra-ui/react";
+import "@fontsource/abel";
 
 // API key for Ethereum node
 // Two popular services are Infura (infura.io) and Alchemy (alchemy.com)
@@ -27,10 +29,16 @@ const config: Config = {
   },
 };
 
+const theme = extendTheme({
+  fonts: {
+    body: { "font-family": "Abel" },
+  },
+});
+
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <DAppProvider config={config}>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>
     </DAppProvider>

@@ -1469,6 +1469,11 @@
     "@ethersproject/properties" "^5.6.0"
     "@ethersproject/strings" "^5.6.0"
 
+"@fontsource/abel@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/abel/-/abel-4.5.5.tgz#ff3ce44b0872e164d7dfd0feba4d68c9eadc9104"
+  integrity sha512-vEZm1b6Qq43O4hdZJ12bMvtMG+gcVsCsd3xq3lRf6vs/uH2QBuIdEfA/7hzvqmKboa2XvoVEQacaY3h7P0fIhA==
+
 "@hapi/b64@5.x.x":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/b64/-/b64-5.0.0.tgz#b8210cbd72f4774985e78569b77e97498d24277d"

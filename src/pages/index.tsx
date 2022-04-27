@@ -8,11 +8,12 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import WithSubnavigation from "../components/Navbar";
-import Headline from "../components/Headline";
+import AboutCollection from "../components/AboutCollection";
 import Carousel from "../components/Carousel";
 import Features from "../components/Features";
 import ArticleList from "../components/Info";
 import NFT from "../components/NFT";
+import AboutRaimundo from "../components/AboutRaimundo";
 export default function WithBackgroundImage() {
   return (
     <>
@@ -53,7 +54,9 @@ export default function WithBackgroundImage() {
       </Flex>
       <br />
       <br />
-      <Headline />
+      <AboutRaimundo />
+      <br />
+      <AboutCollection />
       <br />
       <br />
       <Features />

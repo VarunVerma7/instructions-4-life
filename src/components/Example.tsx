@@ -18,7 +18,7 @@ export function Example() {
       {!account && (
         <button onClick={() => activateBrowserWallet()}>Connect</button>
       )}
-      {account && <p>Account: {account}</p>}
+      {account && <p>Connected to: {account}</p>}
       {etherBalance && <p>Balance: {formatEther(etherBalance)}</p>}
     </div>
   );
