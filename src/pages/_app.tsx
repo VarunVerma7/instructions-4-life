@@ -3,10 +3,6 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 
 import { ChakraProvider } from "@chakra-ui/react";
-import { Provider, chain, defaultChains } from "wagmi";
-import { InjectedConnector } from "wagmi/connectors/injected";
-import { WalletConnectConnector } from "wagmi/connectors/walletConnect";
-import { WalletLinkConnector } from "wagmi/connectors/walletLink";
 import {
   Mainnet,
   DAppProvider,
@@ -34,12 +30,12 @@ const theme = extendTheme({
   },
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: any) {
   return (
-    <DAppProvider config={config}>
-      <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme}>
+      <DAppProvider config={config}>
         <Component {...pageProps} />
-      </ChakraProvider>
-    </DAppProvider>
+      </DAppProvider>
+    </ChakraProvider>
   );
 }
