@@ -40,19 +40,9 @@ export default function Carousel() {
   // This can be static or loaded from a server
   const cards = [
     {
-      title: "Design Projects 1",
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: "IEProjects",
+      text: "IEProjects is dedicated to taking traditionally renowned artists to the digital and modern era through blockchain technology.",
       image: "rai-1.png",
-    },
-    {
-      title: "Design Projects 2",
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image: "rai-2.png",
-    },
-    {
-      title: "Design Projects 3",
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
-      image: "rai-3.png",
     },
   ];
 
@@ -123,10 +113,13 @@ export default function Carousel() {
                 top="50%"
                 transform="translate(0, -50%)"
               >
-                <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+                <Heading
+                  color="White"
+                  fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                >
                   {card.title}
                 </Heading>
-                <Text fontSize={{ base: "md", lg: "lg" }} color="GrayText">
+                <Text fontSize={{ base: "md", lg: "lg" }} color="White">
                   {card.text}
                 </Text>
               </Stack>
