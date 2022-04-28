@@ -61,7 +61,7 @@ const data4 = {
   isNew: true,
   imageURL: "collection/5.png",
   name: "Wayfarer Classic",
-  price: "2 ETH",
+  price: "23 ETH",
   rating: 4.2,
   numReviews: 34,
 };
