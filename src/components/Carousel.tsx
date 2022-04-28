@@ -14,7 +14,7 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
 // Settings for the slider
 const settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   fade: true,
   infinite: true,
