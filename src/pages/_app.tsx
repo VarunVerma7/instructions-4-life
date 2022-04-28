@@ -2,7 +2,6 @@ import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 
-import store from "../app/store";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Provider, chain, defaultChains } from "wagmi";
 import { InjectedConnector } from "wagmi/connectors/injected";
