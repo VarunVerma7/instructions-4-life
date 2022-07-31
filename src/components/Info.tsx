@@ -41,6 +41,7 @@ interface BlogAuthorProps {
 }
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
+  console.log("YOYO");
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
       <Image
